@@ -1,0 +1,59 @@
+:root {
+  --gridLength: 16;
+}
+
+body {
+  background: linear-gradient(to right, #726786, #91919e, rgba(0, 0, 0, 0.6));); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#sketch {
+  display: grid;
+  grid-template-columns: repeat(var(--gridLength), 1fr);
+  grid-template-rows: repeat(var(--gridLength), 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  width: 700px;
+  height: 700px;
+  align-content: center;
+  margin: 50px auto;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  background: black;
+}
+
+#buttons {
+  text-align: center;
+}
+#buttons #clear {
+  background-color: rgb(66, 112, 238);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+#buttons #resize {
+  background-color: rgb(66, 112, 238);;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+#buttons #resize:hover {
+  background-color: rgb(25, 63, 112);
+}
+
+#buttons #clear:hover {
+  background-color: rgb(25, 63, 112);
+}
+
+.cell {
+  background-color: rgb(209, 194, 194);
+  width: auto;
+  height: auto;
+}
+
+.pressed {
+  background-color: #bf44ca;
+}
